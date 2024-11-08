@@ -3,8 +3,8 @@
 using namespace std;
 
 int main() {
-    string Nama[10];
-    float Komisi[10],Penjualan[10],TotalKomisi=0;
+    string Nama];
+    float Komisi,Penjualan,TotalKomisi=0;
     int i,JmlhSales=10;
 
     cout << "Input Penjualan Sales" << endl<<endl;
@@ -13,18 +13,18 @@ int main() {
     for (i = 0; i < JmlhSales; i++) {
         cout << endl << "Data Salesman ke -" << i + 1 << endl;
         cout << "Nama Salesman : ";
-        cin >> Nama[i];
+        cin >> Nama;
         cout << "Penjualan Salesman : ";
-        cin >> Penjualan[i];
+        cin >> Penjualan;
         
-        if(Penjualan[i] < 500000){
-        	Komisi[i] = Penjualan[i] * 0.1;
+        if(Penjualan < 500000){
+        	Komisi = Penjualan * 0.1;
 		}else{
 			Komisi[i] = 500000 * 0.1;
-            Komisi[i] += (Penjualan[i] - 500000) * 0.15;
+            Komisi += (Penjualan - 500000) * 0.15;
              cout<<endl<<"-----------------------------------------------------------"<<endl<<endl;
 		}
-			TotalKomisi += Komisi[i];
+			TotalKomisi += Komisi;
 		}
 		cout<<"Total komisi yang dibayarkan oleh PT. MURAH HATI adalah: "<< TotalKomisi<< endl;
     return 0;
